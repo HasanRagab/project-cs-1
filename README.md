@@ -1,5 +1,3 @@
-Here is a markdown for your project without showing the project structure:
-
 # Project Overview
 
 This project is a C# application that involves a basic calculator and shape calculator functionalities. The application is containerized using Docker and utilizes a solution structure with multiple directories to organize its components.
@@ -7,13 +5,26 @@ This project is a C# application that involves a basic calculator and shape calc
 ## Features
 
 ### 1. **Calculator**:
-   - A basic calculator that supports fundamental operations like addition, subtraction, multiplication, and division.
-   
+
+- A basic calculator that supports fundamental operations like addition, subtraction, multiplication, and division.
+
 ### 2. **Shape Calculator**:
-   - A specialized calculator to compute areas and perimeters of different geometric shapes.
-   
+
+- A specialized calculator to compute areas and perimeters of different geometric shapes.
+
 ### 3. **History**:
-   - A history feature that tracks and displays past calculations, helping users keep track of their work.
+
+- A history feature that tracks and displays past calculations, helping users keep track of their work.
+
+## Images
+
+[![Home Menu](images/home.png)](images/home.png)
+
+[![Calculator](images/calc.png)](images/calc.png)
+
+[![Shape Calculator](images/shapes.png)](images/shapes.png)
+
+[![History](images/history.png)](images/history.png)
 
 ## Technologies
 
@@ -55,10 +66,10 @@ Alternatively, use the `compose.yaml` file to manage services if you plan on usi
 ## Directory Breakdown
 
 - **project1**: The main project folder containing all the necessary code, models, and pages.
-    - **bin/Debug/net9.0**: Contains the compiled application binaries.
-    - **Models**: Defines the application models such as `Shape.cs`.
-    - **Pages**: Includes pages like the `Calculator.cs` and `ShapesCalc.cs`.
-    - **Store**: Contains application state management files like `History.cs`.
+  - **bin/Debug/net9.0**: Contains the compiled application binaries.
+  - **Models**: Defines the application models such as `Shape.cs`.
+  - **Pages**: Includes pages like the `Calculator.cs` and `ShapesCalc.cs`.
+  - **Store**: Contains application state management files like `History.cs`.
 
 ## Contribution
 
