@@ -16,11 +16,11 @@ and manage it.
 
 ## Images
 
-[![Home Menu](images/home2.png)](images/home2.png)
-
 [![Auth](images/auth.png)](images/auth.png)
 
 [![Login](images/login.png)](images/login.png)
+
+[![Home Menu](images/home2.png)](images/home2.png)
 
 [![Seller](images/seller.png)](images/seller.png)
 
