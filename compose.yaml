@@ -4,3 +4,9 @@
     build:
       context: .
       dockerfile: project1/Dockerfile
+
+  project2:
+    image: project2
+    build:
+      context: .
+      dockerfile: project2/Dockerfile
