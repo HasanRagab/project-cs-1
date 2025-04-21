@@ -76,29 +76,50 @@ public class Auth
 
     private static void Register()
     {
-        var email = AnsiConsole.Ask<string>("[green]Enter your email:[/]");
-        var password = AnsiConsole.Ask<string>("[green]Enter your password:[/]");
-
-        if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+        try
         {
-            AnsiConsole.MarkupLine("[red]Email and password cannot be empty.[/]");
+
+            var email = AnsiConsole.Ask<string>("[green]Enter your email:[/]");
+            var password = AnsiConsole.Ask<string>("[green]Enter your password:[/]");
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                AnsiConsole.MarkupLine("[red]Email and password cannot be empty.[/]");
+                return;
+            }
+
+            var existingUser = _userService.GetUserByEmail(email);
+            if (existingUser != null)
+            {
+                AnsiConsole.MarkupLine("[red]Email already exists. Please use a different email.[/]");
+                Register();
+                return;
+            }
+
+            if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                AnsiConsole.MarkupLine("[red]Invalid email format.[/]");
+                Register();
+                return;
+            }
+
+            var user = _userService.CreateUser(email, password);
+            AnsiConsole.MarkupLine($"[green]User {user.Email} registered successfully![/]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Login();
             return;
         }
-
-        if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+        catch (Exception ex)
         {
-            AnsiConsole.MarkupLine("[red]Invalid email format.[/]");
-            Register();
+            Console.Clear();
+            AnsiConsole.MarkupLine($"[red]Error: {ex.Message}[/]");
+            var retryChoice = AnsiConsole.Confirm("[green]Do you want to try registering again?[/]");
+            if (retryChoice) Register();
             return;
         }
-
-        var user = _userService.CreateUser(email, password);
-        AnsiConsole.MarkupLine($"[green]User {user.Email} registered successfully![/]");
-        System.Threading.Thread.Sleep(1000);
-        Console.Clear();
-        Login();
-        return;
     }
+
     private static void Login()
     {
         var email = AnsiConsole.Ask<string>("[green]Enter your email:[/]");
