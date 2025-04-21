@@ -22,9 +22,14 @@ public static class ShopService
         return [.. _dbContext.Categories.Select(c => c.Name).Distinct()];
     }
 
+    public static List<Category> GetAllCategoriesData()
+    {
+        return [.. _dbContext.Categories];
+    }
+
     public static List<Product> SearchProducts(string keyword)
     {
-        if (string.IsNullOrWhiteSpace(keyword))return [.. _dbContext.Products];
+        if (string.IsNullOrWhiteSpace(keyword)) return [.. _dbContext.Products];
         return [.. _dbContext.Products.Where(p => p.Name.Contains(keyword) || (p.Category != null && p.Category.Name.Contains(keyword)))];
     }
 

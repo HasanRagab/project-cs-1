@@ -16,21 +16,21 @@ and manage it.
 
 ## Images
 
-[![Home Menu](images/home2.png)](images/home2.png)
+[![Home Menu](../images/home2.png)](../images/home2.png)
 
-[![Auth](images/auth.png)](images/auth.png)
+[![Auth](../images/auth.png)](../images/auth.png)
 
-[![Login](images/login.png)](images/login.png)
+[![Login](../images/login.png)](../images/login.png)
 
-[![Seller](images/seller.png)](images/seller.png)
+[![Seller](../images/seller.png)](../images/seller.png)
 
-[![Buyer](images/buyer.png)](images/buyer.png)
+[![Buyer](../images/buyer.png)](../images/buyer.png)
 
-[![Add Product](images/addProduct.png)](images/addProduct.png)
+[![Add Product](../images/addProduct.png)](../images/addProduct.png)
 
-[![List Products](images/listProducts.png)](images/listProducts.png)
+[![List Products](../images/listProducts.png)](../images/listProducts.png)
 
-[![Checkout](images/checkout.png)](images/checkout.png)
+[![Checkout](../images/checkout.png)](../images/checkout.png)
 
 ## Technologies
 

@@ -14,18 +14,18 @@ This is a command-line interface (CLI) based GUI shop application built using C#
 
 ## Screenshots
 Below are some screenshots of the application:
-- Landing Page: `images/App/landing.png`
-- Categories: `images/App/categories.png`
-- Add to Cart: `images/App/add_to_cart.png`
-- Cart: `images/App/cart.png`
-- Orders: `images/App/orders.png`
-- Reports: `images/App/reports.png`
-- Users: `images/App/users.png`
-- View Product: `images/App/view_product.png`
-- Add Category: `images/App/add_category.png`
-- Edit Category: `images/App/edit_category.png`
-- Error Adding to Cart: `images/App/error_adding_to_cart.png`
-- Error Creating Product: `images/App/error_create_product.png`
+[![Landing Page](../images/App/landing.png)](../images/App/landing.png)
+[![Categories](../images/App/categories.png)](../images/App/categories.png)
+[![Add to Cart](../images/App/add_to_cart.png)](../images/App/add_to_cart.png)
+[![Cart](../images/App/cart.png)](../images/App/cart.png)
+[![Orders](../images/App/orders.png)](../images/App/orders.png)
+[![Reports](../images/App/reports.png)](../images/App/reports.png)
+[![Users](../images/App/users.png)](../images/App/users.png)
+[![View Product](../images/App/view_product.png)](../images/App/view_product.png)
+[![Add Category](../images/App/add_category.png)](../images/App/add_category.png)
+[![Edit Category](../images/App/edit_category.png)](../images/App/edit_category.png)
+[![Error Adding to Cart](../images/App/error_adding_to_cart.png)](../images/App/error_adding_to_cart.png)
+[![Error Creating Product](../images/App/error_create_product.png)](../images/App/error_create_product.png)
 
 ## Project Structure
 ```

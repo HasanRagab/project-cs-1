@@ -18,13 +18,13 @@ This project is a C# application that involves a basic calculator and shape calc
 
 ## Images
 
-[![Home Menu](images/home.png)](images/home.png)
+[![Home Menu](../images/home.png)](../images/home.png)
 
-[![Calculator](images/calc.png)](images/calc.png)
+[![Calculator](../images/calc.png)](../images/calc.png)
 
-[![Shape Calculator](images/shapes.png)](images/shapes.png)
+[![Shape Calculator](../images/shapes.png)](../images/shapes.png)
 
-[![History](images/history.png)](images/history.png)
+[![History](../images/history.png)](../images/history.png)
 
 ## Technologies
 

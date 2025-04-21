@@ -1038,8 +1038,8 @@ namespace App.Pages
                     }
                     else if (reportList.SelectedItem == 2)
                     {
-                        var categories = ShopService.GetAllCategoryIds();
-                        var salesByCategory = categories.Select(c => $"{c}: ${WarehouseService.GetCategorySales(c)}").ToList();
+                        var categories = ShopService.GetAllCategoriesData();
+                        var salesByCategory = categories.Select(c => $"{c.Name}: ${WarehouseService.GetCategorySales(c.Id)}").ToList();
                         reportDetailsLabel.Text = string.Join("\n", salesByCategory);
                     }
                 }
